@@ -173,7 +173,7 @@ except IOError:
     kok.close()
     print(key)
 
-a=requests.get(" https://github.com/S4BB1R-69/SRX/blob/main/Apruval.txt ").text
+a=requests.get("https://github.com/S4BB1R-69/STC-Pro/blob/main/Apruval.txt").text
 b=str(a)
 key1=open("/storage/emulated/0/android8.txt",'r').read()
 key2=str(key1)  
@@ -184,8 +184,8 @@ else:
     os.system("clear")
     print
     print("Your key  : "+key2)
-    print("contact Admin ")
-    os.system('xdg-open https:/wa.me/+8801949434886')
+    print("\n\t\tContact Admin ")
+    os.system('xdg-open https://wa.me/+8801949434886')
     exit()
 
 def main():
