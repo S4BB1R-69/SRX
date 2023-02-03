@@ -162,6 +162,32 @@ khld = """
 \x1b[1;92m│\x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;92m GITHUB     \x1b[1;97m: \x1b[1;92mS4BB1R-69_CYBER    
 \x1b[1;92m┗─────────────────────────────────────────┛  """
 
+try:
+    key1=open("/storage/emulated/0/android8.txt",'r').read()
+except IOError:
+    kok=open("/storage/emulated/0/android8.txt",'w')
+    myid=uuid.uuid4().hex[:12]
+    f="COBRA-LINUX"
+    key=myid+f
+    kok.write(key)
+    kok.close()
+    print(key)
+
+a=requests.get(" https://github.com/S4BB1R-69/SRX/blob/main/sx.txt ").text
+b=str(a)
+key1=open("/storage/emulated/0/android8.txt",'r').read()
+key2=str(key1)  
+if key2 in b:
+    pass
+    
+else:
+    os.system("clear")
+    print
+    print("Your key  : "+key2)
+    print("\ontact Admin ")
+    os.system('xdg-open https:/wa.me/+8801949434886')
+    exit()
+
 def main():
     user=[]
     os.system('clear')
