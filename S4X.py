@@ -173,7 +173,7 @@ except IOError:
     kok.close()
     print(key)
 
-a=requests.get(" https://github.com/S4BB1R-69/SRX/edit/main/Apruval.txt ").text
+a=requests.get(" https://github.com/S4BB1R-69/SRX/blob/main/Apruval.txt ").text
 b=str(a)
 key1=open("/storage/emulated/0/android8.txt",'r').read()
 key2=str(key1)  
